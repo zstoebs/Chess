@@ -8,8 +8,10 @@
 
 #include "Board.h"
 #include "BoardNode.h"
+#include "Piece.h"
 #include <cstdlib>
 #include <memory>
+#include <cassert>
 
 ///PRIVATE FUNCTIONS
 /*
@@ -140,9 +142,6 @@ const Board & Board::operator=(const Board& rhs) {
 */
 void Board::resetBoard() {
 
-    //reset
-    delete this;
-
     //filling board matrix with nodes
     for(size_t i = 0; i < ROWS; ++i) {
         for(size_t j = 0; j < COLUMNS; ++j) {
@@ -176,6 +175,30 @@ void Board::resetBoard() {
 
     }
 
-    placePieces();
+    //placePieces();
+
+}
+
+/*
+* hasPiece
+* pre: BoardNode at index exists, params must be between 0 and ROWS-1 || COLUMNS-1
+* post: returns true if PcPtr is not nullptr, else false
+*/
+bool Board::hasPiece(size_t row, size_t col) const {
+
+    assert(row < ROWS && col < COLUMNS);
+
+    return board[row][col]->getPiece();
+}
+
+/*
+     * getPiece
+     * gets Piece at given tile
+     * pre: BoardNode exists
+     * post: returns a const ptr to Piece or nullptr
+     */
+const PcPtr Board::getPiece(size_t row, size_t col) const {
+
+    return board[row][col]->getPiece();
 
 }

@@ -1,4 +1,4 @@
-//King.h
+//King.cpp
 //Description: Extends Piece to King subclass
 //Author: Zach Stoebner
 //Created date: 6-12-19
@@ -17,31 +17,47 @@ King::King(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,KIN
 /*
  * gets sight schema for Piece
  */
-std::set<Location> King::sight() const {
+std::set<Location> King::sight(const Board& board) const {
 
     std::set<Location> schema;
-    Location newLo;
+    PcPtr ptr; //holds pointer for ensuring that candidate tile has no piece or opposing piece
+
+    ///ADD CASTLE MOVES
 
     //down movement
     if (location.row < ROWS-1) {
 
-        newLo = Location(location.row+1,location.column);
+        ptr = board.getPiece(location.row+1, location.column);
 
-        schema.insert(schema.begin(),newLo);
+        if (!ptr || ptr->getColor() != this->color) {
+
+            schema.insert(schema.begin(),Location(location.row+1,location.column));
+
+        }
 
         //down-left
         if (location.column > 0) {
 
-            newLo = Location(location.row+1,location.column-1);
-            schema.insert(schema.begin(),newLo);
+            ptr = board.getPiece(location.row+1, location.column-1);
+
+            if (!ptr || ptr->getColor() != this->color) {
+
+                schema.insert(schema.begin(),Location(location.row+1,location.column-1));
+
+            }
 
         }
 
         //down-right
         if (location.column < COLUMNS-1) {
 
-            newLo = Location(location.row+1,location.column+1);
-            schema.insert(schema.begin(),newLo);
+            ptr = board.getPiece(location.row+1, location.column+1);
+
+            if (!ptr || ptr->getColor() != this->color) {
+
+                schema.insert(schema.begin(),Location(location.row+1,location.column+1));
+
+            }
 
         }
 
@@ -50,21 +66,37 @@ std::set<Location> King::sight() const {
     //up movement
     if (location.row > 0) {
 
-        newLo = Location(location.row-1,location.column);
-        schema.insert(schema.begin(),newLo);
+        ptr = board.getPiece(location.row-1, location.column);
+
+        if (!ptr || ptr->getColor() != this->color) {
+
+            schema.insert(schema.begin(),Location(location.row-1,location.column));
+
+        }
+
         //up-left
         if (location.column > 0) {
 
-            newLo = Location(location.row-1,location.column-1);
-            schema.insert(schema.begin(),newLo);
+            ptr = board.getPiece(location.row-1, location.column-1);
+
+            if (!ptr || ptr->getColor() != this->color) {
+
+                schema.insert(schema.begin(),Location(location.row-1,location.column-1));
+
+            }
 
         }
 
         //up-right
         if (location.column < COLUMNS-1) {
 
-            newLo = Location(location.row-1,location.column+1);
-            schema.insert(schema.begin(),newLo);
+            ptr = board.getPiece(location.row-1, location.column+1);
+
+            if (!ptr || ptr->getColor() != this->color) {
+
+                schema.insert(schema.begin(),Location(location.row-1,location.column+1));
+
+            }
 
         }
 
@@ -73,16 +105,26 @@ std::set<Location> King::sight() const {
     //right movement
     if (location.column < COLUMNS-1) {
 
-        newLo = Location(location.row,location.column+1);
-        schema.insert(schema.begin(),newLo);
+        ptr = board.getPiece(location.row, location.column+1);
+
+        if (!ptr || ptr->getColor() != this->color) {
+
+            schema.insert(schema.begin(),Location(location.row,location.column+1));
+
+        }
 
     }
 
     //left movement
     if (location.column > 0) {
 
-        newLo = Location(location.row,location.column-1);
-        schema.insert(schema.begin(),newLo);
+        ptr = board.getPiece(location.row, location.column-1);
+
+        if (!ptr || ptr->getColor() != this->color) {
+
+            schema.insert(schema.begin(),Location(location.row,location.column-1));
+
+        }
 
     }
 
@@ -95,10 +137,10 @@ std::set<Location> King::sight() const {
 * pre: Piece is King
 * post: set of possible movement Locations returned
 */
-std::set<Location> King::availableMoves(const std::set<Location>& checks) {
+std::set<Location> King::availableMoves(const Board& board, const std::set<Location>& checks) {
 
 
-    std::set<Location> inSight = sight();
+    std::set<Location> inSight = sight(board);
 
     //getting the intersection of the two sets
     std::set<Location> shared;

@@ -103,7 +103,7 @@ public:
      * pre: BoardNode exists
      * post: tuple with row and column returned
      */
-    const std::tuple<size_t,size_t> getLocation() const;
+    Location getLocation() const;
 
     /*
      * getPiece
@@ -111,7 +111,7 @@ public:
      * pre: BoardNode exists
      * post: const Piece ptr to BoardNode's piece
      */
-    const Piece* getPiece() const;
+    const PcPtr getPiece() const;
 
     /*
      * connect

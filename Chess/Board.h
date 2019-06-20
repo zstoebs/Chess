@@ -10,8 +10,10 @@
 #define CHESS_BOARD_H
 
 #include "BoardNode.h"
+#include "Piece.h"
 #include <cstdlib>
 #include <memory>
+
 
 class Board {
 
@@ -48,12 +50,19 @@ public:
     void resetBoard();
 
     /*
-     * placePieces
-     * places pieces in appropriate spaces
-     * pre: Board created and Pieces defined
-     * post: all approp. BoardNodes point to correct Pieces
+     * hasPiece
+     * pre: BoardNode at index exists
+     * post: returns true if PcPtr is not nullptr, else false
      */
-    void placePieces();
+    bool hasPiece(size_t row, size_t col) const;
+
+    /*
+     * getPiece
+     * gets Piece at given tile
+     * pre: BoardNode exists
+     * post: returns a const ptr to Piece or nullptr
+     */
+    const PcPtr getPiece(size_t row, size_t col) const;
 
 private:
 
@@ -67,6 +76,14 @@ private:
      * post: all nodes correctly connected if valid connection
      */
     void connectTiles();
+
+    /*
+     * placePieces
+     * places pieces in appropriate spaces
+     * pre: Board created and Pieces defined
+     * post: all approp. BoardNodes point to correct Pieces
+     */
+    void placePieces();
 
 };
 

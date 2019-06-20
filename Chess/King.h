@@ -9,6 +9,7 @@
 #define CHESS_KING_H
 
 #include "Piece.h"
+#include "Board.h"
 
 class King : public Piece {
 
@@ -23,14 +24,14 @@ public:
     /*
      * creates movement schema for Piece
      */
-    std::set<Location> sight() const override;
+    std::set<Location> sight(const Board& board) const;
 
     /*
      * creates a movement schema for Piece
      * pre: Piece is King
      * post: set of possible movement Locations returned
      */
-    std::set<Location> availableMoves(const std::set<Location>& checks);
+    std::set<Location> availableMoves(const Board& board, const std::set<Location>& checks);
 
 };
 

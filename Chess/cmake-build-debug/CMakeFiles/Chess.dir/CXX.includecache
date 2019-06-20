@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.cpp
-Board.h
 /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
 BoardNode.h
 /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
-cstdlib
--
-memory
--
-
-/Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
-BoardNode.h
-/Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
+Piece.h
+/Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
 cstdlib
 -
 memory
@@ -39,6 +31,16 @@ ChessData.h
 /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
 cstdlib
 -
+
+/Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.cpp
+Knight.h
+/Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.h
+
+/Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.h
+Piece.h
+/Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
+Board.h
+/Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
 
 /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
 cstdlib

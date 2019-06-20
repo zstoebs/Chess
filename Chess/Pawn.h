@@ -9,6 +9,7 @@
 #define CHESS_PAWN_H
 
 #include "Piece.h"
+#include "Board.h"
 
 class Pawn : public Piece {
 
@@ -23,7 +24,7 @@ public:
     /*
      * creates movement schema for Piece
      */
-    std::set<Location> sight() const override;
+    std::set<Location> sight(const Board& board) const;
 
 };
 

@@ -129,9 +129,9 @@ TileColor BoardNode::getColor() const {
  * pre: BoardNode exists
  * post: tuple with row and column returned
  */
-const std::tuple<size_t,size_t> BoardNode::getLocation() const {
+Location BoardNode::getLocation() const {
 
-    return std::tuple<size_t,size_t>(location.row,location.column);
+    return Location(location.row,location.column);
 
 }
 
@@ -141,7 +141,7 @@ const std::tuple<size_t,size_t> BoardNode::getLocation() const {
  * pre: BoardNode exists
  * post: const Piece ptr to BoardNode's piece
  */
-const Piece* BoardNode::getPiece() const {
+const PcPtr BoardNode::getPiece() const {
 
     return piece;
 

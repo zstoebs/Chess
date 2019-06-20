@@ -15,6 +15,7 @@
 #include "ChessData.h"
 
 
+
 class Piece {
 
 protected:
@@ -105,13 +106,24 @@ public:
     }
 
     /*
+     * changes piece's location to given coords
+     */
+
+    virtual void move(size_t row, size_t col) {
+
+        location.row = row;
+        location.column = col;
+
+    }
+
+    /*
      * creates sight schema for Piece
      */
+    ///For some reason, I can't include Board.h in this file to add Board param -> can't identify class
     virtual std::set<Location> sight() const = 0;
 
 
 };
 
-typedef Piece* PcPtr;
 
 #endif //CHESS_PIECE_H

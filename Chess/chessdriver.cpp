@@ -6,15 +6,22 @@
 
 #include <iostream>
 #include "Board.h"
-#include "King.h"
 #include "ChessData.h"
 
 
 int main() {
 
-    King king(BLACK,1,1);
+    Board b;
+    b.resetBoard();
 
-    std::cout << king.getPieceType() << std::endl;
+    if (b.hasPiece(1,1)) {
+
+        std::cout << "True" << std::endl;
+    } else {
+
+        std::cout << "False" << std::endl;
+
+    }
 
     return 0;
 }
