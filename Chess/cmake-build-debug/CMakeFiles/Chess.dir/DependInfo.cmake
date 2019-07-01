@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Zachary/Desktop/Code Projects/CLion/Chess/Bishop.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/Bishop.cpp.o"
   "/Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/Board.cpp.o"
   "/Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/BoardNode.cpp.o"
+  "/Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessGame.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/ChessGame.cpp.o"
   "/Users/Zachary/Desktop/Code Projects/CLion/Chess/King.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/King.cpp.o"
   "/Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/Knight.cpp.o"
   "/Users/Zachary/Desktop/Code Projects/CLion/Chess/Pawn.cpp" "/Users/Zachary/Desktop/Code Projects/CLion/Chess/cmake-build-debug/CMakeFiles/Chess.dir/Pawn.cpp.o"

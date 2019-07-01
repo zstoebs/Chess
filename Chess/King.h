@@ -33,6 +33,15 @@ public:
      */
     std::set<Location> availableMoves(const Board& board, const std::set<Location>& checks);
 
+    /*
+     * castle
+     * checks if possible castle for King
+     * pre: Board is set
+     * post: return bool if King and Rook haven't moved and no impeding pieces and no checks
+     */
+    bool castle (const Board& board) const;
+
+
 };
 
 

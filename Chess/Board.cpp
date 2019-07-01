@@ -9,6 +9,12 @@
 #include "Board.h"
 #include "BoardNode.h"
 #include "Piece.h"
+#include "King.h"
+#include "Queen.h"
+#include "Bishop.h"
+#include "Knight.h"
+#include "Rook.h"
+#include "Pawn.h"
 #include <cstdlib>
 #include <memory>
 #include <cassert>
@@ -66,7 +72,49 @@ void Board::connectTiles() {
 * pre: Board created and Pieces defined
 * post: all approp. BoardNodes point to correct Pieces
 */
-void Board::placePieces() {}
+void Board::placePieces() {
+
+    for (size_t j = 0; j < COLUMNS; ++j) {
+
+        //placing pawns
+        board[1][j]->setPiece(new Pawn(WHITE,1,j));
+        board[ROWS-1][j]->setPiece(new Pawn(BLACK,ROWS-2,j));
+
+        ///I know I'm hardcoding here
+        switch (j) {
+
+            case 0:
+                board[0][j]->setPiece(new Rook(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Rook(BLACK,ROWS-1,j));
+            case 1:
+                board[0][j]->setPiece(new Knight(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Knight(BLACK,ROWS-1,j));
+            case 2:
+                board[0][j]->setPiece(new Bishop(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Bishop(BLACK,ROWS-1,j));
+            case 3:
+                board[0][j]->setPiece(new Queen(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Queen(BLACK,ROWS-1,j));
+            case 4:
+                board[0][j]->setPiece(new King(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new King(BLACK,ROWS-1,j));
+            case 5:
+                board[0][j]->setPiece(new Bishop(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Bishop(BLACK,ROWS-1,j));
+            case 6:
+                board[0][j]->setPiece(new Knight(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Knight(BLACK,ROWS-1,j));
+            case 7:
+                board[0][j]->setPiece(new Rook(WHITE,0,j));
+                board[ROWS-1][j]->setPiece(new Rook(BLACK,ROWS-1,j));
+
+
+        }
+
+    }
+
+
+}
 
 ///PUBLIC FUNCTIONS
 /*
@@ -76,12 +124,37 @@ void Board::placePieces() {}
 */
 Board::Board() {
 
-    for (size_t i = 0; i < ROWS; ++i) {
-        for (size_t j = 0; j < COLUMNS; ++j) {
+    //filling board matrix with nodes
+    for(size_t i = 0; i < ROWS; ++i) {
+        for(size_t j = 0; j < COLUMNS; ++j) {
 
-            board[i][j] = nullptr;
+            //odd rows
+            if (i % 2 == 0) {
+
+                switch(j % 2) {
+
+                    case 0:
+                        board[i][j] = std::make_shared<BoardNode>(BoardNode(W,i+1,j+1,nullptr));
+                    default:
+                        board[i][j] = std::make_shared<BoardNode>(BoardNode(B,i+1,j+1,nullptr));
+
+                }
+
+            } else {
+
+                switch(j % 2) {
+
+                    case 0:
+                        board[i][j] = std::make_shared<BoardNode>(BoardNode(B,i+1,j+1,nullptr));
+                    default:
+                        board[i][j] = std::make_shared<BoardNode>(BoardNode(W,i+1,j+1,nullptr));
+
+                }
+
+            }
 
         }
+
     }
 
 }
@@ -142,40 +215,17 @@ const Board & Board::operator=(const Board& rhs) {
 */
 void Board::resetBoard() {
 
-    //filling board matrix with nodes
-    for(size_t i = 0; i < ROWS; ++i) {
-        for(size_t j = 0; j < COLUMNS; ++j) {
 
-            //odd rows
-            if (i % 2 == 0) {
+    for (size_t i = 0; i < ROWS; ++i) {
+        for (size_t j = 0; j < COLUMNS; ++j) {
 
-                switch(j % 2) {
-
-                    case 0:
-                        board[i][j] = std::make_shared<BoardNode>(BoardNode(W,i+1,j+1,nullptr));
-                    default:
-                        board[i][j] = std::make_shared<BoardNode>(BoardNode(B,i+1,j+1,nullptr));
-
-                }
-
-            } else {
-
-                switch(j % 2) {
-
-                    case 0:
-                        board[i][j] = std::make_shared<BoardNode>(BoardNode(B,i+1,j+1,nullptr));
-                    default:
-                        board[i][j] = std::make_shared<BoardNode>(BoardNode(W,i+1,j+1,nullptr));
-
-                }
-
-            }
+            delete board[i][j]->getPiece();
 
         }
 
     }
 
-    //placePieces();
+    placePieces();
 
 }
 
@@ -198,6 +248,8 @@ bool Board::hasPiece(size_t row, size_t col) const {
      * post: returns a const ptr to Piece or nullptr
      */
 const PcPtr Board::getPiece(size_t row, size_t col) const {
+
+    assert(row < ROWS && col < COLUMNS);
 
     return board[row][col]->getPiece();
 

@@ -101,6 +101,12 @@
 		<Unit filename="/Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h">
 			<Option target="Chess"/>
 		</Unit>
+		<Unit filename="/Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessGame.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessGame.h">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/Zachary/Desktop/Code Projects/CLion/Chess/King.cpp">
 			<Option target="Chess"/>
 		</Unit>

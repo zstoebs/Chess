@@ -8,16 +8,35 @@ CMakeFiles/Chess.dir/Bishop.cpp.o: ../BoardNode.h
 CMakeFiles/Chess.dir/Bishop.cpp.o: ../ChessData.h
 CMakeFiles/Chess.dir/Bishop.cpp.o: ../Piece.h
 
+CMakeFiles/Chess.dir/Board.cpp.o: ../Bishop.h
 CMakeFiles/Chess.dir/Board.cpp.o: ../Board.cpp
 CMakeFiles/Chess.dir/Board.cpp.o: ../Board.h
 CMakeFiles/Chess.dir/Board.cpp.o: ../BoardNode.h
 CMakeFiles/Chess.dir/Board.cpp.o: ../ChessData.h
+CMakeFiles/Chess.dir/Board.cpp.o: ../King.h
+CMakeFiles/Chess.dir/Board.cpp.o: ../Knight.h
+CMakeFiles/Chess.dir/Board.cpp.o: ../Pawn.h
 CMakeFiles/Chess.dir/Board.cpp.o: ../Piece.h
+CMakeFiles/Chess.dir/Board.cpp.o: ../Queen.h
+CMakeFiles/Chess.dir/Board.cpp.o: ../Rook.h
 
 CMakeFiles/Chess.dir/BoardNode.cpp.o: ../BoardNode.cpp
 CMakeFiles/Chess.dir/BoardNode.cpp.o: ../BoardNode.h
 CMakeFiles/Chess.dir/BoardNode.cpp.o: ../ChessData.h
 CMakeFiles/Chess.dir/BoardNode.cpp.o: ../Piece.h
+
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Bishop.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Board.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../BoardNode.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../ChessData.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../ChessGame.cpp
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../ChessGame.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../King.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Knight.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Pawn.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Piece.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Queen.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o: ../Rook.h
 
 CMakeFiles/Chess.dir/King.cpp.o: ../Board.h
 CMakeFiles/Chess.dir/King.cpp.o: ../BoardNode.h
@@ -54,9 +73,15 @@ CMakeFiles/Chess.dir/Rook.cpp.o: ../Piece.h
 CMakeFiles/Chess.dir/Rook.cpp.o: ../Rook.cpp
 CMakeFiles/Chess.dir/Rook.cpp.o: ../Rook.h
 
+CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Bishop.h
 CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Board.h
 CMakeFiles/Chess.dir/chessdriver.cpp.o: ../BoardNode.h
 CMakeFiles/Chess.dir/chessdriver.cpp.o: ../ChessData.h
+CMakeFiles/Chess.dir/chessdriver.cpp.o: ../King.h
+CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Knight.h
+CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Pawn.h
 CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Piece.h
+CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Queen.h
+CMakeFiles/Chess.dir/chessdriver.cpp.o: ../Rook.h
 CMakeFiles/Chess.dir/chessdriver.cpp.o: ../chessdriver.cpp
 

@@ -29,7 +29,12 @@ protected:
     //type of piece
     PieceType pieceType;
 
+    //location of piece
     Location location;
+
+    //move count
+    size_t moveCount = 0;
+
 
 public:
 
@@ -116,11 +121,17 @@ public:
 
     }
 
-    /*
-     * creates sight schema for Piece
-     */
-    ///For some reason, I can't include Board.h in this file to add Board param -> can't identify class
-    virtual std::set<Location> sight() const = 0;
+    virtual void incrementMoveCount() {
+
+        ++moveCount;
+
+    }
+
+    virtual size_t getMoveCount() {
+
+        return moveCount;
+
+    }
 
 
 };

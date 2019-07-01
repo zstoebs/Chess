@@ -204,6 +204,33 @@ BoardNode.cpp.s:
 	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/BoardNode.cpp.s
 .PHONY : BoardNode.cpp.s
 
+ChessGame.o: ChessGame.cpp.o
+
+.PHONY : ChessGame.o
+
+# target to build an object file
+ChessGame.cpp.o:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/ChessGame.cpp.o
+.PHONY : ChessGame.cpp.o
+
+ChessGame.i: ChessGame.cpp.i
+
+.PHONY : ChessGame.i
+
+# target to preprocess a source file
+ChessGame.cpp.i:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/ChessGame.cpp.i
+.PHONY : ChessGame.cpp.i
+
+ChessGame.s: ChessGame.cpp.s
+
+.PHONY : ChessGame.s
+
+# target to generate assembly for a file
+ChessGame.cpp.s:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/ChessGame.cpp.s
+.PHONY : ChessGame.cpp.s
+
 King.o: King.cpp.o
 
 .PHONY : King.o
@@ -384,6 +411,9 @@ help:
 	@echo "... BoardNode.o"
 	@echo "... BoardNode.i"
 	@echo "... BoardNode.s"
+	@echo "... ChessGame.o"
+	@echo "... ChessGame.i"
+	@echo "... ChessGame.s"
 	@echo "... King.o"
 	@echo "... King.i"
 	@echo "... King.s"

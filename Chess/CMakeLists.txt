@@ -13,7 +13,7 @@ set(SOURCES
         Bishop.cpp Bishop.h
         Knight.cpp Knight.h
         Rook.cpp Rook.h
-        Pawn.cpp Pawn.h ChessData.h)
+        Pawn.cpp Pawn.h ChessData.h ChessGame.cpp ChessGame.h)
 
 
 add_executable(Chess ${SOURCES})

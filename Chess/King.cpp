@@ -22,8 +22,6 @@ std::set<Location> King::sight(const Board& board) const {
     std::set<Location> schema;
     PcPtr ptr; //holds pointer for ensuring that candidate tile has no piece or opposing piece
 
-    ///ADD CASTLE MOVES
-
     //down movement
     if (location.row < ROWS-1) {
 
@@ -147,6 +145,7 @@ std::set<Location> King::availableMoves(const Board& board, const std::set<Locat
     std::set_intersection(inSight.begin(),inSight.end(),checks.begin(),
             checks.end(),std::inserter(shared,shared.begin()));
 
+    //removing checked tiles from set
     std::set<Location>::iterator iter;
     for (iter = shared.begin(); iter != shared.end(); ++iter) {
 
@@ -159,6 +158,22 @@ std::set<Location> King::availableMoves(const Board& board, const std::set<Locat
     }
 
     return inSight;
+
+}
+
+/*
+     * castle
+     * checks if possible castle for King
+     * pre: Board is set
+     * post: return bool if King and Rook haven't moved and no impeding pieces and no checks
+     */
+bool King::castle (const Board& board) const {
+
+    ///review conditions for castling https://en.wikipedia.org/wiki/Castling
+
+
+
+    return false;
 
 }
 

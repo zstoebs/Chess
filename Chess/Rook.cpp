@@ -84,6 +84,21 @@ std::set<Location> Rook::sight(const Board& board) const {
 }
 
 /*
+     * castle
+     * checks if possible castle for Rook
+     * pre: Board is set
+     * post: return bool if King and Rook haven't moved and no impeding pieces and no checks
+     */
+bool Rook::castle (const Board& board) const {
+
+    ///review conditions for castling https://en.wikipedia.org/wiki/Castling
+
+
+    return false;
+
+}
+
+/*
      * addLocation
      * adds location to set, wrapped in for loop in sight method
      * pre: sight() is called

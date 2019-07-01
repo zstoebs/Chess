@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Chess.dir/Knight.cpp.o"
   "CMakeFiles/Chess.dir/Rook.cpp.o"
   "CMakeFiles/Chess.dir/Pawn.cpp.o"
+  "CMakeFiles/Chess.dir/ChessGame.cpp.o"
   "Chess.pdb"
   "Chess"
 )

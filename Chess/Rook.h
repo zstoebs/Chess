@@ -26,6 +26,14 @@ public:
      */
     std::set<Location> sight(const Board& board) const;
 
+    /*
+     * castle
+     * checks if possible castle for Rook
+     * pre: Board is set
+     * post: return bool if King and Rook haven't moved and no impeding pieces and no checks
+     */
+    bool castle (const Board& board) const;
+
 private:
 
     /*
@@ -36,7 +44,6 @@ private:
      */
     void addLocation(const Board& b, std::set<Location>& curSet,size_t& curPcCount,
                      size_t row, size_t col) const;
-
 
 };
 

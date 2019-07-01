@@ -9,16 +9,35 @@ CMakeFiles/Chess.dir/Bishop.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
 CMakeFiles/Chess.dir/Board.cpp.o
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Bishop.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.cpp
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/King.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Pawn.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Queen.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.h
 CMakeFiles/Chess.dir/BoardNode.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.cpp
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
+CMakeFiles/Chess.dir/ChessGame.cpp.o
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Bishop.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessGame.cpp
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessGame.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/King.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Pawn.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Queen.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.h
 CMakeFiles/Chess.dir/King.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
@@ -55,8 +74,14 @@ CMakeFiles/Chess.dir/Rook.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.cpp
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.h
 CMakeFiles/Chess.dir/chessdriver.cpp.o
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Bishop.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/King.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Knight.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Pawn.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Queen.h
+ /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/chessdriver.cpp
