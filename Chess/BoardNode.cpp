@@ -9,7 +9,6 @@
 #include "BoardNode.h"
 #include <cstdlib>
 #include <cstddef>
-#include <tuple>
 #include <memory>
 #include "Piece.h"
 

@@ -18,17 +18,5 @@
 
 int main() {
 
-    Board b;
-    b.resetBoard();
 
-    if (b.hasPiece(1,1)) {
-
-        std::cout << "True" << std::endl;
-    } else {
-
-        std::cout << "False" << std::endl;
-
-    }
-
-    return 0;
 }

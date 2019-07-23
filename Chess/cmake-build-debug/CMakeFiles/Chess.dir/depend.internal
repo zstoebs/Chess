@@ -4,8 +4,6 @@
 CMakeFiles/Chess.dir/Bishop.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Bishop.cpp
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Bishop.h
- /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
- /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
 CMakeFiles/Chess.dir/Board.cpp.o
@@ -39,8 +37,6 @@ CMakeFiles/Chess.dir/ChessGame.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Queen.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.h
 CMakeFiles/Chess.dir/King.cpp.o
- /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
- /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/King.cpp
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/King.h
@@ -67,8 +63,6 @@ CMakeFiles/Chess.dir/Queen.cpp.o
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Queen.cpp
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Queen.h
 CMakeFiles/Chess.dir/Rook.cpp.o
- /Users/Zachary/Desktop/Code Projects/CLion/Chess/Board.h
- /Users/Zachary/Desktop/Code Projects/CLion/Chess/BoardNode.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/ChessData.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Piece.h
  /Users/Zachary/Desktop/Code Projects/CLion/Chess/Rook.cpp

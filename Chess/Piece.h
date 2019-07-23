@@ -10,7 +10,6 @@
 #define CHESS_PIECE_H
 
 #include <cstdlib>
-#include <tuple>
 #include <set>
 #include "ChessData.h"
 
@@ -104,9 +103,9 @@ public:
     /*
      * get Piece's location
      */
-    virtual std::tuple<size_t, size_t> getLocation() const {
+    virtual Location getLocation() const {
 
-        return std::tuple<size_t,size_t>(location.row,location.column);
+        return Location(location.row,location.column);
 
     }
 

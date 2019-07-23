@@ -13,8 +13,6 @@
 
 class Pawn : public Piece {
 
-    bool justMoved2 = false;
-
 public:
 
     /*
@@ -22,26 +20,6 @@ public:
     * post: Pawn is initialized
     */
     Pawn(PieceColor pieceColor, size_t row, size_t col);
-
-    /*
-     * creates movement schema for Piece
-     */
-    std::set<Location> sight(const Board& board) const;
-
-    /*
-     * checks if possible en passant
-     */
-    bool enPassant(const Board& board) const;
-
-    /*
-     * changes field for a pawn that has just moved 2 tiles from start
-     */
-    void setJustMoved2(bool state);
-
-    /*
-     * returns Boolean if pawn just moved 2 tiles from start
-     */
-    bool hasJustMoved2() const;
 
 };
 

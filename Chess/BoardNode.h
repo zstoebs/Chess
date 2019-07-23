@@ -10,7 +10,6 @@
 #define CHESS_BOARDNODE_H
 
 #include <cstdlib>
-#include <tuple>
 #include <memory>
 #include "Piece.h"
 #include "ChessData.h"

@@ -21,11 +21,6 @@ public:
      */
     Knight(PieceColor pieceColor, size_t row, size_t col);
 
-    /*
-     * creates movement schema for Piece
-     */
-    std::set<Location> sight(const Board& board) const;
-
 };
 
 
