@@ -11,7 +11,7 @@
 * default constructor
 * post: Rook is initialized
 */
-Rook::Rook(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,row,col) {}
+Rook::Rook(PieceColor pieceColor, u_int32_t row, u_int32_t col) : Piece(pieceColor,row,col) {}
 
 
 

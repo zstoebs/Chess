@@ -18,7 +18,7 @@ public:
      * default constructor
      * post: Rook is initialized
      */
-    Rook(PieceColor pieceColor, size_t row, size_t col);
+    Rook(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
 
 };

@@ -18,7 +18,7 @@ public:
     * default constructor
     * post: Pawn is initialized
     */
-    Pawn(PieceColor pieceColor, size_t row, size_t col);
+    Pawn(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
 };
 

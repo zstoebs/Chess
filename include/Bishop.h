@@ -20,7 +20,7 @@ public:
      * default constructor
      * post: Bishop is initialized
      */
-    Bishop(PieceColor pieceColor, size_t row, size_t col);
+    Bishop(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
 };
 

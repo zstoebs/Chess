@@ -9,11 +9,8 @@
 #ifndef CHESS_PIECE_H
 #define CHESS_PIECE_H
 
-#include <cstdlib>
-#include <set>
+#include <cstdint>
 #include "Location.h"
-
-class Board;
 
 class Piece {
 
@@ -33,12 +30,12 @@ protected:
     Location location;
 
     //move count
-    size_t moveCount;
+    u_int32_t moveCount;
 
 
 public:
 
-    Piece(PieceColor pieceColor, size_t row, size_t col) : threatened(false),
+    Piece(PieceColor pieceColor, u_int32_t row, u_int32_t col) : threatened(false),
                                                             color(pieceColor),
                                                             location(row,col) {}
 
@@ -108,7 +105,7 @@ public:
 
     }
 
-    virtual size_t getMoveCount() {
+    virtual u_int32_t getMoveCount() {
 
         return moveCount;
 

@@ -12,6 +12,6 @@
 * default constructor
 * post: King is initialized
 */
-King::King(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,row,col) {}
+King::King(PieceColor pieceColor, u_int32_t row, u_int32_t col) : Piece(pieceColor,row,col) {}
 
 

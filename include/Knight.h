@@ -18,7 +18,7 @@ public:
      * default constructor
      * post: Knight is initialized
      */
-    Knight(PieceColor pieceColor, size_t row, size_t col);
+    Knight(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
 };
 

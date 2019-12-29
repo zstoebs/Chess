@@ -18,7 +18,7 @@ public:
     * default constructor
     * post: King is initialized
     */
-    King(PieceColor pieceColor, size_t row, size_t col);
+    King(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
 
 };

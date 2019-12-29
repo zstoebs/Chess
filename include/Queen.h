@@ -18,7 +18,7 @@ public:
      * default constructor
      * post: Queen is initialized
      */
-    Queen(PieceColor pieceColor, size_t row, size_t col);
+    Queen(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
 };
 

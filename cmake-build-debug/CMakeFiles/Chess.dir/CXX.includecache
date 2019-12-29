@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/Bishop.h
-Piece.h
-../include/Piece.h
-
 ../include/King.h
-Piece.h
-../include/Piece.h
-
-../include/Knight.h
 Piece.h
 ../include/Piece.h
 
@@ -22,47 +14,13 @@ Piece.h
 cstdint
 ../include/cstdint
 
-../include/Pawn.h
-Piece.h
 ../include/Piece.h
-
-../include/Piece.h
-cstdlib
--
-set
+cstdint
 -
 Location.h
 ../include/Location.h
 
-../include/Queen.h
-Piece.h
-../include/Piece.h
-
-../include/Rook.h
-Piece.h
-../include/Piece.h
-
-/Users/Zachary/Desktop/Code/C++/Chess/src/Bishop.cpp
-Bishop.h
-/Users/Zachary/Desktop/Code/C++/Chess/src/Bishop.h
-
 /Users/Zachary/Desktop/Code/C++/Chess/src/King.cpp
 King.h
 /Users/Zachary/Desktop/Code/C++/Chess/src/King.h
-
-/Users/Zachary/Desktop/Code/C++/Chess/src/Knight.cpp
-Knight.h
-/Users/Zachary/Desktop/Code/C++/Chess/src/Knight.h
-
-/Users/Zachary/Desktop/Code/C++/Chess/src/Pawn.cpp
-Pawn.h
-/Users/Zachary/Desktop/Code/C++/Chess/src/Pawn.h
-
-/Users/Zachary/Desktop/Code/C++/Chess/src/Queen.cpp
-Queen.h
-/Users/Zachary/Desktop/Code/C++/Chess/src/Queen.h
-
-/Users/Zachary/Desktop/Code/C++/Chess/src/Rook.cpp
-Rook.h
-/Users/Zachary/Desktop/Code/C++/Chess/src/Rook.h
 
