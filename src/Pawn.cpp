@@ -11,5 +11,5 @@
 * default constructor
 * post: Queen is initialized
 */
-Pawn::Pawn(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,PAWN,row,col){}
+Pawn::Pawn(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,row,col){}
 

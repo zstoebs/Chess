@@ -9,7 +9,6 @@
 #define CHESS_KNIGHT_H
 
 #include "Piece.h"
-#include "Board.h"
 
 class Knight : public Piece {
 

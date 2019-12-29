@@ -17,28 +17,26 @@ Piece.h
 ../include/Knight.h
 Piece.h
 ../include/Piece.h
-Board.h
-../include/Board.h
+
+../include/Location.h
+cstdint
+../include/cstdint
 
 ../include/Pawn.h
 Piece.h
 ../include/Piece.h
-Board.h
-../include/Board.h
 
 ../include/Piece.h
 cstdlib
 -
 set
 -
-ChessData.h
-../include/ChessData.h
+Location.h
+../include/Location.h
 
 ../include/Queen.h
 Piece.h
 ../include/Piece.h
-Board.h
-../include/Board.h
 
 ../include/Rook.h
 Piece.h

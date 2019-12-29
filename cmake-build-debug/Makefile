@@ -204,6 +204,33 @@ src/Knight.cpp.s:
 	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Knight.cpp.s
 .PHONY : src/Knight.cpp.s
 
+src/Location.o: src/Location.cpp.o
+
+.PHONY : src/Location.o
+
+# target to build an object file
+src/Location.cpp.o:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Location.cpp.o
+.PHONY : src/Location.cpp.o
+
+src/Location.i: src/Location.cpp.i
+
+.PHONY : src/Location.i
+
+# target to preprocess a source file
+src/Location.cpp.i:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Location.cpp.i
+.PHONY : src/Location.cpp.i
+
+src/Location.s: src/Location.cpp.s
+
+.PHONY : src/Location.s
+
+# target to generate assembly for a file
+src/Location.cpp.s:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Location.cpp.s
+.PHONY : src/Location.cpp.s
+
 src/Pawn.o: src/Pawn.cpp.o
 
 .PHONY : src/Pawn.o
@@ -258,6 +285,33 @@ src/Queen.cpp.s:
 	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Queen.cpp.s
 .PHONY : src/Queen.cpp.s
 
+src/Reactor.o: src/Reactor.cpp.o
+
+.PHONY : src/Reactor.o
+
+# target to build an object file
+src/Reactor.cpp.o:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Reactor.cpp.o
+.PHONY : src/Reactor.cpp.o
+
+src/Reactor.i: src/Reactor.cpp.i
+
+.PHONY : src/Reactor.i
+
+# target to preprocess a source file
+src/Reactor.cpp.i:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Reactor.cpp.i
+.PHONY : src/Reactor.cpp.i
+
+src/Reactor.s: src/Reactor.cpp.s
+
+.PHONY : src/Reactor.s
+
+# target to generate assembly for a file
+src/Reactor.cpp.s:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Reactor.cpp.s
+.PHONY : src/Reactor.cpp.s
+
 src/Rook.o: src/Rook.cpp.o
 
 .PHONY : src/Rook.o
@@ -285,6 +339,33 @@ src/Rook.cpp.s:
 	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/Rook.cpp.s
 .PHONY : src/Rook.cpp.s
 
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -303,15 +384,24 @@ help:
 	@echo "... src/Knight.o"
 	@echo "... src/Knight.i"
 	@echo "... src/Knight.s"
+	@echo "... src/Location.o"
+	@echo "... src/Location.i"
+	@echo "... src/Location.s"
 	@echo "... src/Pawn.o"
 	@echo "... src/Pawn.i"
 	@echo "... src/Pawn.s"
 	@echo "... src/Queen.o"
 	@echo "... src/Queen.i"
 	@echo "... src/Queen.s"
+	@echo "... src/Reactor.o"
+	@echo "... src/Reactor.i"
+	@echo "... src/Reactor.s"
 	@echo "... src/Rook.o"
 	@echo "... src/Rook.i"
 	@echo "... src/Rook.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

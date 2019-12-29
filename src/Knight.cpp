@@ -11,5 +11,5 @@
 * default constructor
 * post: Knight is initialized
 */
-Knight::Knight(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,KNIGHT,row,col) {}
+Knight::Knight(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,row,col) {}
 

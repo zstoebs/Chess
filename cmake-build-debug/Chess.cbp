@@ -84,27 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/Bishop.h">
-			<Option target="Chess"/>
-		</Unit>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/King.h">
-			<Option target="Chess"/>
-		</Unit>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/Knight.h">
-			<Option target="Chess"/>
-		</Unit>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/Pawn.h">
-			<Option target="Chess"/>
-		</Unit>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/Piece.h">
-			<Option target="Chess"/>
-		</Unit>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/Queen.h">
-			<Option target="Chess"/>
-		</Unit>
-		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/include/Rook.h">
-			<Option target="Chess"/>
-		</Unit>
 		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Bishop.cpp">
 			<Option target="Chess"/>
 		</Unit>
@@ -114,13 +93,22 @@
 		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Knight.cpp">
 			<Option target="Chess"/>
 		</Unit>
+		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Location.cpp">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Pawn.cpp">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Queen.cpp">
 			<Option target="Chess"/>
 		</Unit>
+		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Reactor.cpp">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/Rook.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/src/main.cpp">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/Zachary/Desktop/Code/C++/Chess/CMakeLists.txt">

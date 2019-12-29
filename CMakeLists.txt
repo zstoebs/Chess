@@ -7,19 +7,15 @@ include_directories(include)
 include_directories(src)
 
 set(SOURCE_FILES
-        include/Bishop.h
-        include/King.h
-        include/Knight.h
-        include/Pawn.h
-        include/Piece.h
-        include/Queen.h
-        include/Rook.h
         src/Bishop.cpp
         src/King.cpp
         src/Knight.cpp
         src/Pawn.cpp
         src/Queen.cpp
-        src/Rook.cpp)
+        src/Rook.cpp
+        src/Reactor.cpp
+        src/Location.cpp
+        src/main.cpp)
 
 add_executable(Chess ${SOURCE_FILES})
 

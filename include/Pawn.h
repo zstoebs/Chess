@@ -9,7 +9,6 @@
 #define CHESS_PAWN_H
 
 #include "Piece.h"
-#include "Board.h"
 
 class Pawn : public Piece {
 

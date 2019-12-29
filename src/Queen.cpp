@@ -11,4 +11,4 @@
 * default constructor
 * post: Queen is initialized
 */
-Queen::Queen(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,QUEEN,row,col) {}
+Queen::Queen(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,row,col) {}

@@ -11,4 +11,4 @@
 * default constructor
 * post: Queen is initialized
 */
-Bishop::Bishop(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,BISHOP,row,col) {}
+Bishop::Bishop(PieceColor pieceColor, size_t row, size_t col) : Piece(pieceColor,row,col) {}

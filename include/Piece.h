@@ -11,34 +11,35 @@
 
 #include <cstdlib>
 #include <set>
-#include "ChessData.h"
+#include "Location.h"
 
-
+class Board;
 
 class Piece {
+
+public:
+
+    enum PieceColor {WHITE,BLACK};
 
 protected:
 
     //true if in sight of another piece
     bool threatened;
 
-    //color of piece
-    PieceColor color;
-
-    //type of piece
-    PieceType pieceType;
+    //color of piece --> false = white, true = black
+    enum PieceColor color;
 
     //location of piece
     Location location;
 
     //move count
-    size_t moveCount = 0;
+    size_t moveCount;
 
 
 public:
 
-    Piece(PieceColor pieceColor, PieceType type, size_t row, size_t col) : threatened(false),
-                                                            color(pieceColor),pieceType(type),
+    Piece(PieceColor pieceColor, size_t row, size_t col) : threatened(false),
+                                                            color(pieceColor),
                                                             location(row,col) {}
 
     /*
@@ -49,9 +50,9 @@ public:
     /*
      * sets threat of Piece
      */
-    virtual void setThreat(bool threat) {
+    virtual void threat() {
 
-        threatened = threat;
+        threatened = !threatened;
 
     }
 
@@ -83,29 +84,11 @@ public:
     }
 
     /*
-     * gets Piece's type
-     */
-    virtual PieceType getPieceType() {
-
-        return pieceType;
-
-    }
-
-    /*
-     * set Piece's location
-     */
-    virtual void setLocation(size_t r, size_t c) {
-
-        location = Location(r,c);
-
-    }
-
-    /*
      * get Piece's location
      */
-    virtual Location getLocation() const {
+    virtual const Location& getLocation() const {
 
-        return Location(location.row,location.column);
+        return location;
 
     }
 
@@ -113,10 +96,9 @@ public:
      * changes piece's location to given coords
      */
 
-    virtual void move(size_t row, size_t col) {
+    virtual void move(u_int32_t row, u_int32_t col) {
 
-        location.row = row;
-        location.column = col;
+        location = Location(row,col);
 
     }
 
@@ -131,6 +113,8 @@ public:
         return moveCount;
 
     }
+
+    virtual bool canMove(Location end) = 0;
 
 
 };
