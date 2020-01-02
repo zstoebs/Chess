@@ -7,12 +7,9 @@
 #include <algorithm>
 #include <functional>
 
-Reactor* Reactor::inst = nullptr;
+Reactor *Reactor::inst = nullptr;
 
-Reactor::Reactor()
-    : running_event_loop(true)
-{
-}
+Reactor::Reactor() : running_event_loop(true) {}
 
 /**
  * @class Remove_Handler_Adapter
@@ -22,47 +19,39 @@ Reactor::Reactor()
  *        std:for_each() algorithm.
  */
 struct Remove_Handler_Adapter {
-    // Remote event_handler from the singleton Reactor.
-    bool operator()(Event_Handler* event_handler)
-    {
-        Reactor::instance()->remove_input_handler(event_handler);
-        return true;
-    }
+  // Remote event_handler from the singleton Reactor.
+  bool operator()(Event_Handler *event_handler) {
+    Reactor::instance()->remove_input_handler(event_handler);
+    return true;
+  }
 };
 
-Reactor::~Reactor()
-{
-    std::for_each(dispatch_table.begin(), dispatch_table.end(), Remove_Handler_Adapter());
+Reactor::~Reactor() {
+  std::for_each(dispatch_table.begin(), dispatch_table.end(),
+                Remove_Handler_Adapter());
 }
 
-Reactor* Reactor::instance()
-{
-    if (Reactor::inst == nullptr)
-        Reactor::inst = new Reactor;
-    return Reactor::inst;
+Reactor *Reactor::instance() {
+  if (Reactor::inst == nullptr)
+    Reactor::inst = new Reactor;
+  return Reactor::inst;
 }
 
-void Reactor::register_input_handler(Event_Handler* eh)
-{
-    dispatch_table.push_back(eh);
+void Reactor::register_input_handler(Event_Handler *eh) {
+  dispatch_table.push_back(eh);
 }
 
-void Reactor::remove_input_handler(Event_Handler* eh)
-{
-    std::remove(dispatch_table.begin(), dispatch_table.end(), eh);
-    delete eh;
+void Reactor::remove_input_handler(Event_Handler *eh) {
+  std::remove(dispatch_table.begin(), dispatch_table.end(), eh);
+  delete eh;
 }
 
-void Reactor::run_event_loop()
-{
-    while (running_event_loop)
-        std::for_each(dispatch_table.begin(), dispatch_table.end(),
-            std::mem_fn(&Event_Handler::handle_input));
+void Reactor::run_event_loop() {
+  while (running_event_loop)
+    std::for_each(dispatch_table.begin(), dispatch_table.end(),
+                  std::mem_fn(&Event_Handler::handle_input));
 }
 
-void Reactor::end_event_loop()
-{
-    running_event_loop = false;
-}
+void Reactor::end_event_loop() { running_event_loop = false; }
 
 #endif // REACTOR_CPP

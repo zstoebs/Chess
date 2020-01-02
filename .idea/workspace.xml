@@ -13,8 +13,27 @@
   <component name="ChangeListManager">
     <list default="true" id="f1ecffd3-b992-44cc-9f54-51b2e3a31047" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Bishop.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Bishop.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Event_Handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Event_Handler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/King.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/King.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Knight.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Knight.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Location.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Location.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Pawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Piece.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Piece.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Queen.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Queen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Reactor.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Reactor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Rook.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Rook.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bishop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bishop.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/King.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/King.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Knight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Knight.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Location.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Location.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rook.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rook.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +113,8 @@
       <workItem from="1577653583008" duration="205000" />
       <workItem from="1577653791090" duration="77000" />
       <workItem from="1577653967199" duration="3201000" />
-      <workItem from="1577912834072" duration="18733000" />
+      <workItem from="1577912834072" duration="18943000" />
+      <workItem from="1577938557650" duration="108000" />
     </task>
     <servers />
   </component>
@@ -106,6 +126,22 @@
       <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state x="330" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.981@0.23.1680.981" timestamp="1577653800244" />
+    <state width="1358" height="244" key="GridCell.Tab.0.bottom" timestamp="1577938665337">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1358" height="244" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1577938665337" />
+    <state width="1358" height="244" key="GridCell.Tab.0.center" timestamp="1577938665336">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1358" height="244" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1577938665336" />
+    <state width="1358" height="244" key="GridCell.Tab.0.left" timestamp="1577938665336">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1358" height="244" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1577938665336" />
+    <state width="1358" height="244" key="GridCell.Tab.0.right" timestamp="1577938665337">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1358" height="244" key="GridCell.Tab.0.right/0.23.1680.981@0.23.1680.981" timestamp="1577938665337" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1577653848926">
       <screen x="0" y="23" width="1680" height="981" />
     </state>

@@ -14,11 +14,11 @@ class Reactor;
  */
 class Event_Handler {
 public:
-    // Destructor can be made private to ensure dynamic allocation.
-    virtual ~Event_Handler() = default;
+  // Destructor can be made private to ensure dynamic allocation.
+  virtual ~Event_Handler() = default;
 
-    // Called back by the Reactor when input events occur.
-    virtual void handle_input() = 0;
+  // Called back by the Reactor when input events occur.
+  virtual void handle_input() = 0;
 };
 
 #endif // EVENT_HANDLER_H
