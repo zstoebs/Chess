@@ -15,7 +15,8 @@ set(SOURCE_FILES
         src/Rook.cpp
         src/Reactor.cpp
         src/Location.cpp
-        src/main.cpp)
+        src/main.cpp
+        src/Board.cpp)
 
 add_executable(Chess ${SOURCE_FILES})
 

@@ -14,4 +14,9 @@
 */
 King::King(PieceColor pieceColor, u_int32_t row, u_int32_t col) : Piece(pieceColor,row,col) {}
 
+std::set<Location> King::updateValidMoves(const Board* board) {
+    std::set<Location> moves;
+    return moves;
+}
+
 

@@ -4,6 +4,9 @@
 
 #include "Location.h"
 
+Location::Location(const Location& rhs) noexcept : row(rhs.row), column(rhs.column) {
+}
+
 Location::Location(u_int32_t row, u_int32_t col) noexcept : row(row), column(col) {}
 
 const Location & Location::operator=(const Location& rhs) {
@@ -45,37 +48,22 @@ Location& Location::operator=(Location&& other) noexcept {
 //defining equalities for usage in containers
 bool Location::operator==(const Location& rhs) const {
 
-    if (this != &rhs) {
-
         return row == rhs.row && column == rhs.column;
-
-    }
-
-    return true;
 
 }
 
 bool Location::operator!=(const Location& rhs) const {
-
-    if (this != &rhs) {
-
-        return row != rhs.row && column != rhs.column;
-
-    }
-
-    return false;
-
-}
-
-bool Location::operator>(const Location& rhs) const {
-
-    return (row > rhs.row) || (row == rhs.row && column > rhs.column);
-
+    return !operator==(rhs);
 }
 
 bool Location::operator<(const Location& rhs) const {
-
-    return (row < rhs.row) || (row == rhs.row && column < rhs.column);
-
+    return row < rhs.row || (row == rhs.row && column < rhs.column);
 }
 
+const u_int32_t& Location::getRow() const {
+    return row;
+}
+
+const u_int32_t& Location::getColumn() const {
+    return column;
+}

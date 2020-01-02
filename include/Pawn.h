@@ -20,6 +20,14 @@ public:
     */
     Pawn(PieceColor pieceColor, u_int32_t row, u_int32_t col);
 
+
+protected:
+
+    /*
+ * Updates valid move set
+ */
+    virtual std::set<Location> updateValidMoves(const Board* board);
+
 };
 
 

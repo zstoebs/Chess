@@ -10,7 +10,11 @@
 #define CHESS_PIECE_H
 
 #include <cstdint>
+#include <set>
+#include <stdexcept>
 #include "Location.h"
+
+class Board;
 
 class Piece {
 
@@ -32,12 +36,25 @@ protected:
     //move count
     u_int32_t moveCount;
 
+    /*
+     * valid move set schema
+     */
+    std::set<Location> schema;
+
+    /*
+     * Updates valid move set
+     */
+    virtual std::set<Location> updateValidMoves(const Board*) = 0;
+
 
 public:
 
     Piece(PieceColor pieceColor, u_int32_t row, u_int32_t col) : threatened(false),
                                                             color(pieceColor),
-                                                            location(row,col) {}
+                                                            location(row,col),
+                                                            moveCount(0),
+                                                            schema()
+    {}
 
     /*
      * Piece destructor
@@ -47,7 +64,7 @@ public:
     /*
      * sets threat of Piece
      */
-    virtual void threat() {
+    virtual void threat() noexcept {
 
         threatened = !threatened;
 
@@ -56,7 +73,7 @@ public:
     /*
      * getter for threatened field
      */
-    virtual bool isThreatened() const {
+    virtual bool isThreatened() const noexcept {
 
         return threatened;
 
@@ -65,7 +82,7 @@ public:
     /*
      * setter for PieceColor field
      */
-    virtual void setColor(PieceColor pieceColor) {
+    virtual void setColor(PieceColor pieceColor) noexcept {
 
         color = pieceColor;
 
@@ -92,27 +109,48 @@ public:
     /*
      * changes piece's location to given coords
      */
+    virtual bool move(const Board* board, Location& end) {
 
-    virtual void move(u_int32_t row, u_int32_t col) {
+        std::set<Location> moves;
+        Location prev(location);
 
-        location = Location(row,col);
+            location = end;
+
+            try {
+                moves = updateValidMoves(board);
+                schema = moves;
+            } catch (const std::exception &e) {
+                location = prev;
+                return false;
+            }
+
+            ++moveCount;
+            return true;
 
     }
 
-    virtual void incrementMoveCount() {
-
-        ++moveCount;
-
-    }
-
-    virtual u_int32_t getMoveCount() {
+    virtual u_int32_t getMoveCount() noexcept {
 
         return moveCount;
 
     }
 
-    virtual bool canMove(Location end) = 0;
+    virtual bool canMove(Location& end) {
+        return schema.find(end) != schema.end();
+    }
 
+    virtual void handleEvent(const Board* board) {
+
+        std::set<Location> moves;
+        try {
+            moves = updateValidMoves(board);
+        } catch (const std::exception& e){
+            throw e;
+        }
+
+        schema = moves;
+
+    }
 
 };
 
