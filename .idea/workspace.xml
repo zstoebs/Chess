@@ -12,25 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1ecffd3-b992-44cc-9f54-51b2e3a31047" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/Board.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Bishop.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Bishop.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/King.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/King.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Knight.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Knight.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Location.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Location.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Pawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Pawn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Piece.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Piece.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Queen.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Queen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Rook.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Rook.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bishop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bishop.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/King.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/King.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Knight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Knight.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Location.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Location.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rook.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rook.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +94,7 @@
       <workItem from="1577653583008" duration="205000" />
       <workItem from="1577653791090" duration="77000" />
       <workItem from="1577653967199" duration="3201000" />
-      <workItem from="1577912834072" duration="14525000" />
+      <workItem from="1577912834072" duration="18733000" />
     </task>
     <servers />
   </component>

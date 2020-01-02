@@ -10,7 +10,13 @@
 #include "Bishop.h"
 #include "Rook.h"
 
-Board::Board() : ROWS(8),COLUMNS(8),board(ROWS,std::vector<std::shared_ptr<Piece>>(COLUMNS,nullptr)), pieces(),checkmate(false){
+Board::Board() : ROWS(8),
+COLUMNS(8),
+board(ROWS,std::vector<std::shared_ptr<Piece>>(COLUMNS,nullptr)),
+pieces(),
+taken(),
+checkmate(false)
+{
 
     try {
 
@@ -79,6 +85,10 @@ void Board::notify() {
     }
 }
 
+std::weak_ptr<Piece> Board::access(Location loc) const {
+    return std::weak_ptr<Piece>(board[loc.getRow()][loc.getColumn()]);
+}
+
 bool Board::movePiece(Piece piece, Location& end) {
 
     const uint32_t i(end.getRow());
@@ -87,8 +97,35 @@ bool Board::movePiece(Piece piece, Location& end) {
 
     if (piece.canMove(end)) {
 
-        if (board[i][j] == nullptr) {
-            /// COMPLETE THIS METHOD
+        std::shared_ptr<Piece> takesPiece = nullptr;
+
+        // thankfully shared_ptr swaps are noexcept
+        board[i][j].swap(takesPiece);
+        board[i][j].swap(board[prev.getRow()][prev.getColumn()]);
+
+        // telling the piece to move
+        if (!piece.move(this,end)) {
+
+            // undo swaps
+            board[i][j].swap(board[prev.getRow()][prev.getColumn()]);
+            board[i][j].swap(takesPiece);
+            return false;
+        }
+
+        if (takesPiece != nullptr) {
+            auto tmpPieces(pieces);
+            auto iter(tmpPieces.begin());
+            for (  ; iter != tmpPieces.end() && *iter != takesPiece; ++iter) {}
+
+            if (iter != tmpPieces.end())
+                tmpPieces.erase(iter);
+
+            // moving taken piece to taken set
+            taken.push_back(takesPiece);
+
+            // swapping new pieces set with old
+            pieces.swap(tmpPieces);
+
         }
 
         return true;

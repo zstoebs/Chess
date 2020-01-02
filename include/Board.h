@@ -21,12 +21,14 @@ private:
     int ROWS, COLUMNS;
     std::vector<std::vector<std::shared_ptr<Piece>>> board;
     std::vector<std::shared_ptr<Piece>> pieces;
+    std::vector<std::shared_ptr<Piece>> taken;
     bool checkmate;
 
 public:
 
     static Board* instance();
     void notify();
+    std::weak_ptr<Piece> access(Location loc) const;
     bool movePiece(Piece piece, Location& end);
 
 };
