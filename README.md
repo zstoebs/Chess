@@ -11,7 +11,7 @@ The current primary dependencies for this project are C++ and its Standard Templ
   - Consolidated mechanics of pieces in Board class to avoid a circular inclusion problem
 
 # To-do:
-  - Translate
+  - Translate legacy movement strategies to current implementation
   - Defining and implementing a visual interface (planning on using OpenGL)
   - Simple testing of the backend functionality
   - Rigorous testing
